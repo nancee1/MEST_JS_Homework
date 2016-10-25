@@ -64,8 +64,28 @@ var firstPizza = Object.create(pizza);
  *     create two animals from it.
  */
 
- function Animal()
+ function Animal(name, ears, legs, mouth) {         
+    this.name = name;
+    this.ears = ears;
+    this.legs = legs;
+    this.mouth = mouth;
+	}
 
+ Animal.prototype.hear = function() {
+    console.log (this.name + " uses it's ears to hear");
+ };
+  Animal.prototype.see = function() {
+    console.log (this.name + " uses it's eyes to see");
+ };
+ 
+ 	lion = new Animal("Lion");
+ 	console.log(lion.name);
+ 	console.log(lion.hear());
+
+ 
+ 	cat = new Animal("Cat");
+ 	console.log(cat.name);
+ 	console.log(cat.see());
 /*
  * 6. Write a small menu selection function by using if-else and switch, input number, output name of your order
  */
