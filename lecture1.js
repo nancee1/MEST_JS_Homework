@@ -89,11 +89,64 @@ var firstPizza = Object.create(pizza);
 /*
  * 6. Write a small menu selection function by using if-else and switch, input number, output name of your order
  */
+function make_order(orderNo) { 																//using if-else
+	console.log("----Menu----");
+	var menu = [ "Fried rice and chicken", "Spaghetti", "Nigerian Jollof"];
+	
+	for (var i = 0; i < menu.length; i++) {
+		console.log(i + 1 + " - " + menu[i]);
+	}
+	
+	if (orderNo === 1) {
+		console.log("Your Order: Fried rice and chicken");
+	} else if (orderNo === 2) {
+		console.log("Your Order: Spaghetti");
+	} else if (orderNo === 3) {
+		console.log("Your Order: Nigerian Jollof");
+	}
+}
 
+function make_order(orderNo) { 																	//using switch
+	console.log("----Menu----");
+	var menu = [ "Fried rice and chicken", "Spaghetti", "Nigerian Jollof"];
+	
+	for (var i = 0; i < menu.length; i++) {
+		console.log(i + 1 + " - " + menu[i]);
+	}
+	
+	switch(orderNo) {
+		case 1:
+			console.log("Your Order: Fried rice and chicken");
+			break;
+		case 2:
+			console.log("Your Order: Spaghetti");
+			break;
+		case 3:
+			console.log("Your Order: Nigerian Jollof");
+			break;
+	}
+}
 /*
  * 7. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array ,for loop and conditions.
  */
 
+var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]
+for (var i = 0; i < studentScores.length; i++) {
+	if (studentScores[i] > 70) {
+		console.log("Student with score " + studentScores[i] + " is above average");
+	} else {
+		console.log("Student with score " + studentScores[i] + " is below average");
+	}
+}
 /*
  * 8. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array , array.forEach and conditions.
  */
+
+ var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]
+studentScores.forEach(function(score, index) {
+	if (score > 70)  {
+		console.log("Student with " + score + " marks did great");
+	} else {
+		console.log("Studen with " + score+ " marks can do better");
+	}
+});
