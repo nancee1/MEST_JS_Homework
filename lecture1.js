@@ -5,8 +5,8 @@
 var firstCar = 'Doge'; //variable names should begin with a letter
 var var = 'variable'; //variable names should make sense and should not be reserved javascript words.
 var firstName = 'Jerry'; //variable names should not contain white space and camelCase is preferred
-var schoolName = 'MEST'; // variable name is correct but camleCase is preferred for best practise and readability
-var totalNumber = 100;// variable name is correct but camleCase is preferred for best practise and readability
+var schoolName = 'MEST'; // variable name is correct but camelCase is preferred for best practise and readability
+var totalNumber = 100;// variable name is correct but camelCase is preferred for best practise and readability
 
 /*
  * 2. Are the following variable valid? If it is not please explain it and correct them by using the best practise
@@ -18,7 +18,11 @@ var response = "Ashwin said, 'Yes Sir!'"; //The value of variable is not valid b
 /*
  * 3. Try 0.3 + 0.1 === 0.4, explain what happen here
  */
-
+0.3 + 0.1 === 0.4 //Here input value is same as output value, so it returns true
+ output is true 
+0.3 + 0.1 === '0.4'  //Here input type is "number" but output type is "string" so it returns false
+ output is false
+ This is because === compares if the values and types are same.
 
 /*
  * 4. Build a pizza object by using all three object creation method, it must has at least 4 properties
