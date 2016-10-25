@@ -147,7 +147,7 @@ for (var i = 0; i < studentScores.length; i++) {
  */
 
  var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]
-studentScores.forEach(function(score, index) {
+	studentScores.forEach(function(score, index) {
 	if (score > 70)  {
 		console.log("Student with " + score + " marks did great");
 	} else {
