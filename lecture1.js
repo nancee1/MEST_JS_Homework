@@ -3,7 +3,7 @@
  */
 
 var firstCar = 'Doge'; //variable names should begin with a letter
-var var = 'variable'; //variable names should make sense and should not be reserved javascript words.
+var someVariable = 'variable'; //variable names should make sense and should not be reserved javascript words.
 var firstName = 'Jerry'; //variable names should not contain white space and camelCase is preferred
 var schoolName = 'MEST'; // variable name is correct but camelCase is preferred for best practise and readability
 var totalNumber = 100;// variable name is correct but camelCase is preferred for best practise and readability
@@ -93,43 +93,33 @@ var firstPizza = Object.create(pizza);
 /*
  * 6. Write a small menu selection function by using if-else and switch, input number, output name of your order
  */
-function make_order(orderNo) { 																//using if-else
-	console.log("----Menu----");
-	var menu = [ "Fried rice and chicken", "Spaghetti", "Nigerian Jollof"];
-	
-	for (var i = 0; i < menu.length; i++) {
-		console.log(i + 1 + " - " + menu[i]);
-	}
-	
-	if (orderNo === 1) {
-		console.log("Your Order: Fried rice and chicken");
-	} else if (orderNo === 2) {
-		console.log("Your Order: Spaghetti");
-	} else if (orderNo === 3) {
-		console.log("Your Order: Nigerian Jollof");
-	}
-}
 
-function make_order(orderNo) { 																	//using switch
-	console.log("----Menu----");
-	var menu = [ "Fried rice and chicken", "Spaghetti", "Nigerian Jollof"];
-	
-	for (var i = 0; i < menu.length; i++) {
-		console.log(i + 1 + " - " + menu[i]);
-	}
-	
-	switch(orderNo) {
-		case 1:
+var prompt = prompt("Select 1 for Fried rice and chicken, 2 for Spaghetti, 3 for Nigerian Jollof");
+	if(prompt == "1")
+		console.log("Your Order: Fried rice and chicken");
+	else if(prompt == "2")
+		console.log("Your Order: Spaghetti");
+	else if(prompt == "3")
+		console.log("Your Order: Nigerian Jollof");
+	else
+		console.log("Enter a valid number");
+
+
+switch(prompt("Select 1 for Fried rice and chicken, 2 for Spaghetti, 3 for Nigerian Jollof")){
+		case "1":
 			console.log("Your Order: Fried rice and chicken");
 			break;
-		case 2:
+		case "2":
 			console.log("Your Order: Spaghetti");
 			break;
-		case 3:
+		case "3":
 			console.log("Your Order: Nigerian Jollof");
 			break;
+		default:
+			console.log("Enter a valid number");
+			break;
 	}
-}
+
 /*
  * 7. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array ,for loop and conditions.
  */
