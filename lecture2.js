@@ -30,7 +30,11 @@ console.log(weekDays);
  *  var arr2 = ['Tuesday', 'Wednesday']
  *  var arr3 = ['Thursday', 'Friday', 'Saturday']
  */
-
+var arr1 = ['Sunday', 'Monday']
+var arr2 = ['Tuesday', 'Wednesday']
+var arr3 = ['Thursday', 'Friday', 'Saturday']
+var weekDays = arr1.concat(arr2, arr3);
+console.log(weekDays);
 /*
  * 4. what is the result(output of following code):
  *    var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
