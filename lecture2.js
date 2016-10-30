@@ -58,7 +58,16 @@ console.log(arr); // Here the content of 'arr' has already been sorted and print
  *    console.log(arr.sort());
  *    console.log(arr);
  */
+var arr = [1, 3, 'apple', 'orange', 'black', 'test', 2];
+console.log(arr.sort());
+console.log(arr);
 
+(output):
+[ 1, 2, 3, 'apple', 'black', 'orange', 'test' ]
+[ 1, 2, 3, 'apple', 'black', 'orange', 'test' ]
+
+.sort - sorts the array content by numbers first
+.sort - alphabeticaly sorts the digits
 /*
  * 6. Please remove mike, jerry, adn Enoch from the following array by using slice
  *    var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
