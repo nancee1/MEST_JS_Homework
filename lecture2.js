@@ -20,7 +20,10 @@
  *  var arr1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday']
  *  var arr2 = ['Thursday', 'Friday', 'Saturday']
  */
-
+var arr1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday']
+var arr2 = ['Thursday', 'Friday', 'Saturday']
+var weekDays = arr1.concat(arr2);
+console.log(weekDays);
 /*
  *  3.Please combine those three array together as one array by only using concate() function once:
  *  var arr1 = ['Sunday', 'Monday']
