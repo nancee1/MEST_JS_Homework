@@ -72,7 +72,11 @@ console.log(arr);
  * 6. Please remove mike, jerry, adn Enoch from the following array by using slice
  *    var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
  */
-
+ var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
+ var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
+console.log(arr.slice(2,3));
+console.log(arr.slice(3,4));
+console.log(arr.slice(5,6));
 /*
  * 7. what is the result(output of following code):
  *    var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
