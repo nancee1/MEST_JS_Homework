@@ -83,7 +83,12 @@ console.log(arr.slice(5,6));
  *    console.log(arr.slice(-3, -1));
  *    console.log(arr);
  */
+var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
+console.log(arr.slice(-3, -1));// This prints Yaw and Enoch as -1 indicates the last index of the array
+console.log(arr);
 
+[ 'Yaw', 'Enoch' ] //(-3,-1) slices from the last index to the 3rd index from the back of the array
+[ 'ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars' ]// slice doesnt remove any element from the main array
 
 /*
  * 8. what is the result(output of following code):
