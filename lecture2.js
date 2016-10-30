@@ -41,6 +41,16 @@ console.log(weekDays);
  *    console.log(arr.sort());
  *    console.log(arr);
  */
+var arr = ['ashwin', 'Todd', 'mike', 'jerry', 'Yaw', 'Enoch', 'lars'];
+console.log(arr.sort());
+console.log(arr); // Here the content of 'arr' has already been sorted and prints the sorted array
+
+(outout):
+[ 'Enoch', 'Todd', 'Yaw', 'ashwin', 'jerry', 'lars', 'mike' ]
+[ 'Enoch', 'Todd', 'Yaw', 'ashwin', 'jerry', 'lars', 'mike' ]
+
+.sort - alphabeticaly sorts the array content by capitals first, then small letters
+
 
 /*
  * 5. what is the result(output of following code):
