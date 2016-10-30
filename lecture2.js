@@ -8,7 +8,13 @@
  \backspace
  \f form feed
  */
-
+\0 - The null character is a contro; character that has all binary values set to zero, usually used to represent the end of a string.
+\n - (new line): This is used to instruct the computer to print subsequen strings/characters on a new line.
+\r - (carriage return) : This is used to return a device's cursor to the beginning of the line of text'.
+\v - (vertical tab): This is used to move the cursor up or down.
+\t - This is used to insert a tab space on a line.
+\backspace - This is used to delete a previous character.
+\f - (form feed) : This is a control character used to skip to the first line of the next page.
 /*
  *  2.Please combine those two array together as one array by using concate:
  *  var arr1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday']
