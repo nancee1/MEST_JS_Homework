@@ -13,9 +13,10 @@
  *
  *  var obj = {
  *      func: func // what is the second func here?
- *  };
- *
- *  obj.func(); //what is the output? try to explain why.
+ *  }; //The second func is a member of the obj object that invokes the predefined func() method.
+
+ *  obj.func(); //what is the output? try to explain why. 
+ 	The output is an empty object with no members/properties 
  *
  *  obj.func.bind(window)(); // what is the output? why?
  *
