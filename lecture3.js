@@ -8,7 +8,8 @@
  *      console.log(this);
  *  }
  *
- *  func(); // what is the output? Why?
+ *  func(); // what is the output? Why? The output is a list of methods available on the 'window' object. 
+             // This is because by default 'this' refers to the globally available 'window' object. 
  *
  *  var obj = {
  *      func: func // what is the second func here?
